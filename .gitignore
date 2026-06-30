@@ -49,6 +49,7 @@
 *.bin
 
 .vs/
+.idea/
 Editor/Bin/Resource/*
 Engine/Bin/Resource/*
 Client/Bin/Resource/*
