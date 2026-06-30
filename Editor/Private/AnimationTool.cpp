@@ -740,8 +740,9 @@ void CAnimationTool::LoadDat()
 
 	_matrix		PreTransformMatrix = XMMatrixIdentity();
 	//_float fSize = 1.f;
-	_float fSize = 0.0001f;
+	//_float fSize = 0.0001f;
 	//_float fSize = 0.01f;
+	_float fSize = 0.01f;
 	PreTransformMatrix = XMMatrixScaling(fSize, fSize, fSize) * XMMatrixRotationY(XMConvertToRadians(180.f)); // Default
 
 	static bool isCharacter = { false };
@@ -791,7 +792,7 @@ void CAnimationTool::LoadDat()
     {
         IGFD::FileDialogConfig config;
 
-        config.path = "../../Client/Bin/Resource/Model/";
+        config.path = "../../Client/Bin/Resource/";
         config.flags = ImGuiFileDialogFlags_ReadOnlyFileNameField;
 
         basePathString = config.path;
@@ -1090,7 +1091,7 @@ void CAnimationTool::Render_Model_Detail()
 			Desc.IsFacial = true;
 		}
 		else 
-			Desc.strShaderTag = TEXT("Prototype_Component_Shader_VtxAnimMesh");
+			Desc.strShaderTag = TEXT("Prototype_Component_Shader_VtxAnimMesh"); 
 
         //Desc.strComputeShaderTag = TEXT("Prototype_Component_Shader_ComputeVtxAnimMesh");
         Desc.strComputeShaderTag = TEXT("Prototype_Component_Shader_ComputeVtxAnimMeshCharacter");

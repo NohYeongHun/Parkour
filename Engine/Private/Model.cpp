@@ -1626,7 +1626,7 @@ HRESULT CModel::Ready_Shared_Buffers()
 		CAnimation* pAnimation = Pair.second;
 
 		// GPU Buffer를 만든 객체들은 모든 키프레임 채널들을 제거한다?
-		pAnimation->Release_Channels();
+		// pAnimation->Release_Channels();
 	}
 
 

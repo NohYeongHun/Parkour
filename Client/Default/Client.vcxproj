@@ -42,6 +42,74 @@
   <ItemGroup>
     <ResourceCompile Include="Client.rc" />
   </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\Bin\ShaderFiles\Engine_ComputeShader_Blur.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Engine_ComputeShader_DOF.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Engine_ComputeShader_HZB.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Engine_ComputeShader_MotionBlur.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Engine_ComputeShader_Noise.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Engine_ComputeShader_OcclusionCulling.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Engine_ComputeShader_RadialBlur.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Engine_ComputeShader_Sampling.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Engine_ComputeShader_ShadowMap.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Engine_ComputeShader_SSAO.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Engine_ComputeShader_SSS.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Engine_ComputeShader_VF.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Engine_Shader_Cell.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Engine_Shader_Decal.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Engine_Shader_Deferred.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Engine_Shader_EnvMapDeferred.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Engine_Shader_Fade.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_ComputeVtxAnimMesh.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_ComputeVtxAnimMeshCharacter.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_ComputeVtxAnimMeshFly.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_ComputeVtxAnimMeshNonRib.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_ComputeVtxAnimMesh_Skining.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_ComputeVtxAnimMorph.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_ComputeVtxInstance_AnimMesh.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_FXMeshUpdate_CS.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_ParticleUpdate_CS.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_SFX_Burst.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_SFX_Burst_Instance.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_SFX_Sonora.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_UIText.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_UI_TextInstance.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_UI_VtxCurveTrace.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_UI_VtxCurveTrace_Sphere.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_UI_VtxInstance.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_UI_VtxPosTex.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxAnimMesh.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxAnimMeshCharacter.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxAnimMesh_Instance.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxAnimMesh_MotionTrail.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxFXMesh_Instance.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxFXRect.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxInstance_PointParticle.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxMesh.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxMesh_Instance.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxMesh_Instance_FireFly.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxMesh_MonsterProp.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxMesh_Water.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxPoint.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxPosTex.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxPropAnimMesh.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxScan.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxSkyBox.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxSkyBox_Heaven.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxSkyBox_Logo.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxTrailMesh.hlsl" />
+    <FxCompile Include="..\Bin\ShaderFiles\Shader_VtxVaMesh.hlsl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Bin\ShaderFiles\Engine_ComputeShader_Function.hlsli" />
+    <None Include="..\Bin\ShaderFiles\Engine_Shader_Defines.hlsli" />
+    <None Include="..\Bin\ShaderFiles\Engine_Shader_Function.hlsli" />
+    <None Include="..\Bin\ShaderFiles\Engine_Shader_Light.hlsli" />
+    <None Include="..\Bin\ShaderFiles\Engine_Shader_Shadow.hlsli" />
+    <None Include="..\Bin\ShaderFiles\Engine_Shader_State.hlsli" />
+    <None Include="..\Bin\ShaderFiles\Engine_Shader_Water.hlsli" />
+    <None Include="..\Bin\ShaderFiles\Shader_UI_State.hlsli" />
+  </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
     <Keyword>Win32Proj</Keyword>

@@ -119,7 +119,7 @@ void CEditorApp::Post_Update()
 
 void CEditorApp::Update(_float fTimeDelta)
 {
-	BoneReadbackProfiler::BeginFrame();
+	//BoneReadbackProfiler::BeginFrame();
 
 	m_pGameInstance->Update_Engine(fTimeDelta);
 
@@ -175,7 +175,7 @@ void CEditorApp::Update(_float fTimeDelta)
 	ImGui::Text(szFrame);
 	ImGui::End();
 
-	BoneReadbackProfiler::DrawImGui();
+	//BoneReadbackProfiler::DrawImGui();
 
 	m_fTimeAcc += fTimeDelta;
 	++m_iCnt;
