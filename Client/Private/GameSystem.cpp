@@ -13,6 +13,9 @@ void CGameSystem::Ready_GameSystem(ID3D11Device* pDevice, ID3D11DeviceContext* p
 {
 	m_pMouseController = CMouseController::Create();
 	ASSERT_CRASH(m_pMouseController);
+
+	m_pParser = CParser::Create(pDevice, pContext);
+	ASSERT_CRASH(m_pParser);
 }
 
 void CGameSystem::Update(_float fTimeDelta)

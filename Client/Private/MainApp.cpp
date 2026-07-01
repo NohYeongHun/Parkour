@@ -45,6 +45,8 @@ HRESULT CMainApp::Initialize()
 	// Jolt Physics SetUp
 	m_pGameInstance->SetUp_PhysicsSystem();
 
+	m_pGameSystem->Ready_GameSystem(m_pDevice, m_pContext);
+
 	Ready_Prototype_ForStatic();
 
 	Ready_Event();
